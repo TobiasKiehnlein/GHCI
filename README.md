@@ -1,7 +1,7 @@
 ## Execution
 Install python3 and pip and execute the following:
 
-- Windows: `pip install matplotlib`, `python <filename>.py`
+- Windows: `python -m pip install matplotlib`, `python <filename>.py`
 - Mac/Linux: `pip3 install matplotlib`, `python3 <filename>.py`
 
 ## Results
