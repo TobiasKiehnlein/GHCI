@@ -1,15 +1,11 @@
 import csv
-import math
+from utils import get_euclidean_distance
 
 import matplotlib.patches as patches
 import matplotlib.pyplot as plt
 
 
-def get_euclidean_distance(a, b):
-    return math.sqrt((a[0] - b[0]) ** 2 + (a[1] - b[1]) ** 2)
-
-
-with open('eyedata.csv', newline='\n') as csvfile:
+with open('../eyedata.csv', newline='\n') as csvfile:
     data = [[int(y) for y in x] for x in csv.reader(csvfile, delimiter=';')]
 
 for i in range(1, len(data)):
