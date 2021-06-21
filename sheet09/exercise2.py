@@ -5,7 +5,7 @@ import matplotlib.patches as patches
 import matplotlib.pyplot as plt
 
 
-with open('../eyedata.csv', newline='\n') as csvfile:
+with open('eyedata.csv', newline='\n') as csvfile:
     data = [[int(y) for y in x] for x in csv.reader(csvfile, delimiter=';')]
 
 for i in range(1, len(data)):
