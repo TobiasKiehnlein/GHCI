@@ -1,9 +1,10 @@
 import csv
+import time
 
 import matplotlib.patches as patches
 import matplotlib.pyplot as plt
 
-from sheet09.utils import get_euclidean_distance
+from utils import get_euclidean_distance
 
 with open('eyedata.csv', newline='\n') as csv_file:
     x, y = map(list, zip(*[[int(x[0]), int(x[1])] for x in csv.reader(csv_file, delimiter=';')]))
